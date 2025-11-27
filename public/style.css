@@ -1,0 +1,136 @@
+/*
+|--------------------------------------------------------------------------
+| GLOBAL & BASE STYLES
+|--------------------------------------------------------------------------
+*/
+body {
+    /* Base font, zero margin, and default text color */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: #222;
+    
+    /* Global background color */
+    background-color: #f8f8f8; 
+    
+    /* Padding to accommodate the fixed header */
+    padding-top: 85px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| LOGO & HEADER STYLES
+|--------------------------------------------------------------------------
+*/
+.logo-image {
+    /* Defines a perfect circle for the logo */
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin-right: 8px; /* Separation from text */
+}
+
+/* Admin Panel Header (Used if not using Bootstrap for admin header) */
+header {
+    background: #222;
+    color: #fff;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Admin header link style */
+header a {
+    color: #9fe;
+    margin-left: 12px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| CLIENT PAGE (Product Grid/Card STYLES)
+|--------------------------------------------------------------------------
+*/
+.product-card {
+    /* Transition for hover effects */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+}
+
+.product-card:hover {
+    /* Lift and shadow effect */
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
+}
+
+.card-img-top {
+    /* Ensures consistent image display within the card */
+    height: 250px;
+    object-fit: cover;
+    /* Match card border radius for top corners */
+    border-top-left-radius: 12px; 
+    border-top-right-radius: 12px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| ADMIN PANEL SPECIFIC STYLES
+|--------------------------------------------------------------------------
+*/
+.admin {
+    padding: 16px;
+}
+
+/* Admin Form Container */
+form {
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: grid;
+    gap: 12px;
+}
+
+/* Admin Form/List Product Styles - Shared Input/Button Base */
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+/* Legacy Admin Product List Item */
+.product {
+    background: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    gap: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.product img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.small {
+    font-size: 13px;
+    color: #666;
+}
+
+.actions button {
+    margin-right: 8px;
+}
